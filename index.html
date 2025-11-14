@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keranjang Belanja - Toko Roti Lezat</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Roti Lezat</div>
+    <ul>
+      <li><a href="beranda.html">Beranda</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="index.html">Keranjang</a></li>
+      <li><a href="promoo.html">Promo</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <h1>Toko Roti Lezat</h1>
+  <h2>Keranjang Belanja 🧺</h2>
+
+  <table id="cartTable">
+    <tr>
+      <th>Produk</th>
+      <th>Harga</th>
+      <th>Jumlah</th>
+      <th>Subtotal</th>
+      <th>Aksi</th>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="Rye bread atau roti gandum hitam adalah jenis roti….jpeg.jpg" alt="Roti gandum">
+        <br>Roti Tawar
+      </td>
+      <td>Rp 12.000</td>
+      <td>
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1">
+        <button class="plus">+</button>
+      </td>
+      <td>Rp 12.000</td>
+      <td><button class="hapus">Hapus</button></td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="roti coklat.jpg" alt="Roti coklat">
+        <br>Donat Cokelat
+      </td>
+      <td>Rp 8.000</td>
+      <td>
+        <button class="minus">-</button>
+        <input type="number" value="2" min="1">
+        <button class="plus">+</button>
+      </td>
+      <td>Rp 16.000</td>
+      <td><button class="hapus">Hapus</button></td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="croissant.jpg" alt="Croissant">
+        <br>Croissant
+      </td>
+      <td>Rp 15.000</td>
+      <td>
+        <button class="minus">-</button>
+        <input type="number" value="1" min="1">
+        <button class="plus">+</button>
+      </td>
+      <td>Rp 15.000</td>
+      <td><button class="hapus">Hapus</button></td>
+    </tr>
+  </table>
+
+  <div class="total">Total: Rp 43.000 <button class="checkout">Checkout</button></div>
+
+<script src="index.js"></script>
+</body>
+</html>

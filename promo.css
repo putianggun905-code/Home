@@ -1,0 +1,157 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#FAEEDB, #F6DCB7);
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    width: 100%;
+    background: #F49B26;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    background-color: #F49B26;
+    padding: 18px 0;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.text-box {
+    text-align: center;
+    color: #6A4A20;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* ===== IMAGE ===== */
+.img-container {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.img-container:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.2);
+}
+
+.promo-img {
+    width: 260px;
+    border-radius: 15px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #F49B26;
+    padding: 14px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* ===== ANIMASI ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.fade-in-delayed {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    .promo-img {
+        width: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .promo-img {
+        width: 200px;
+    }
+
+    .text-box {
+        font-size: 16px;
+    }
+}
